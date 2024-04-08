@@ -289,6 +289,19 @@
             font-size:30px;
         }
 
+        .video-container-h2-ytp * {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom:40px;
+            position: relative;
+            font-size:30px;
+        }
+
+        .ytp-title-text {
+            margin-top: 10px;
+
+        }
+
             /* Timeline Container */
         .timeline {
           background: white;
@@ -468,6 +481,10 @@ iframe {
 }
 
 div.video-container-h2 h2 {
+    font-size:20px;
+}
+
+div.video-container-h2-ytp h2 {
     font-size:20px;
 }
 
