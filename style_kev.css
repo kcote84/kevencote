@@ -1,3 +1,4 @@
+<<<<<<< HEAD
         @import url('https://fonts.cdnfonts.com/css/the-great-summer');
 
         body {
@@ -500,3 +501,508 @@ div.separateur {
     margin-top:20px;
 }
 }
+=======
+        @import url('https://fonts.cdnfonts.com/css/the-great-summer');
+
+        body {
+         margin: 0;
+         font-family: 'The Great Summer', sans-serif;
+         font-size: 24px;
+         font-style: normal;
+         font-variant: normal;
+         font-weight: 700;
+         line-height: 26.4px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        :root {
+            --color1: #483D8B;
+            --color2: #DCDCDC80;
+        }
+
+        iframe {
+            width: 100%;
+            border: none;
+            height: 350px;
+        }
+
+        div.container {
+            justify-content: center;
+            align-items: flex-start;
+            height: 100%;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+
+        div.cover {
+          background:url(cover_v2.png) no-repeat center/cover;
+          height : 360px;
+          position: relative;
+        }
+
+        img.cover-profile {
+            height : 150px;
+            position: relative;
+            left: 50%;
+            margin-left: -65px;
+            margin-top : 30px;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        div.cover p {
+            color: lightgray;
+            text-align: center;
+            margin-top: -10px;
+        }
+
+        div.cover-contact {
+            font-family : arial;
+            font-size: 14px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border-left: 4px solid var(--color1) ;
+            padding-left: 10px;
+        }
+
+        div.cover-contact p {
+            text-align : left;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        div.cover-contact p:first-child {
+            margin-bottom: 10px;
+        }
+
+        div.cover-contact * {
+            color:white;
+        }
+
+        a.contact-button {
+            position: absolute;
+            text-decoration: none;
+            color: white;
+            padding: 8px 20px;
+            margin-top: -10px;
+            text-align:left;
+            left: 50%;
+            margin-left: -75px;
+            border: 4px solid var(--color1) ;
+            background-color: #483D8B50
+        }
+
+        a.contact-button:hover {
+            background-color: #F8F8FF;
+            border: 4px solid #F8F8FF ;
+            color: var(--color1);
+        }
+
+        .section {
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            overflow: auto;
+        }
+
+        .section p {
+        font-family: monaco, Consolas, "Lucida Console", monospace; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; ;
+
+        }
+
+        div.section-grise1 {
+            background: url(triangle2white.svg) no-repeat center bottom/100%;
+            background-color: var(--color2);
+            padding-bottom: 80px;
+            /* -------FONT A REMPLACER PEUT_ÊTRE -------------- */
+            font-family: monaco, Consolas, "Lucida Console", monospace; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; ;
+        }
+
+        div.section-grise1 p {
+            font-size : 22px;
+            color: #656565;
+            text-align: center;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        div.section-grise2 {
+            background: url(triangle1white.svg) no-repeat center top/100%;
+            background-color: var(--color2);
+            padding-top: 80px;
+            /* -------FONT A REMPLACER PEUT_ÊTRE -------------- */
+            font-family: monaco, Consolas, "Lucida Console", monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; ;
+        }
+
+        h2 {
+            font-family: 'The Great Summer', sans-serif;
+            font-size: 30px;
+
+        }
+
+        div.separateur {
+            background: var(--color1);
+            height: 1px;
+            width: 200px;
+            position: relative;
+            left: 50%;
+            margin-left: -100px;
+        }
+
+        img.col-contenu {
+            width: 40%;
+        }
+
+        div.col-contenu {
+            width: 60%;
+            padding-left: 16px;
+        }
+
+        .float-right {
+            float:right;
+        }
+
+        div.texte-avec-ligne-verticale {
+            margin-top:0;
+        }
+
+        p.texte-avec-ligne-verticale {
+            margin-top:0;
+            border-left:4px solid var(--color1);
+            padding-left: 8px;
+            height: 70px;
+            display: inline-block;
+        }
+
+        div.texte-avec-ligne-verticale a {
+            position: relative;
+            margin-top: 30px;
+            left:33%
+        }
+
+        div.barre-verticale {
+            height: 50px;
+            width: 4px;
+            background-color: var(--color1);
+            margin-right: 8px;
+        }
+
+       .col-portfolio {
+            width: 46%;
+
+       }
+
+       div.frame {
+            margin:30px 50px;
+            padding: 20px 30px;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       }
+
+       p.frame-title {
+            font-size : 30px;
+            text-align: center;
+            font-family: 'The Great Summer', sans-serif;
+            margin-top: 5px;
+            margin-bottom: 15px;
+       }
+
+       div.frame img{
+            width: 100px;
+            }
+
+       div.portfolio-header {
+            height: 60px;
+            background: url(cover_v2.png) no-repeat center/cover;
+            position: relative;
+            overflow: auto;
+       }
+
+       h3 {
+            position: relative;
+            margin-left: 20px;
+            margin-top:-45px;
+            margin-bottom:0;
+            padding-bottom: 0;
+            color: white;
+            border-left: 4px solid var(--color1) ;
+            padding-left: 10px;
+       }
+
+       h3 a {
+            text-decoration:none;
+            color: white;
+       }
+
+       h3 a:hover {
+            color: var(--color1);
+        }
+
+       a.contact-button-portfolio {
+            position: absolute;
+            text-decoration: none;
+            color: white;
+            padding: 4px 10px;
+            text-align:left;
+            border: 4px solid var(--color1) ;
+            background-color: #483D8B50;
+            right:2%;
+            margin-top:12px;
+        }
+
+       a.contact-button-portfolio:hover {
+            background-color: #F8F8FF;
+            border: 4px solid #F8F8FF ;
+            color: var(--color1);
+        }
+
+       .video-container {
+            position: relative;
+            width: 90%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+       .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-container-h2 * {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom:0px;
+            position: relative;
+            font-size:30px;
+        }
+
+        .video-container-h2-ytp * {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom:40px;
+            position: relative;
+            font-size:30px;
+        }
+
+        .ytp-title-text {
+            margin-top: 10px;
+
+        }
+
+            /* Timeline Container */
+        .timeline {
+          background: white;
+          margin: 20px auto;
+          padding: 20px 20px 20px 10%;
+        }
+
+        /* Outer Layer with the timeline border */
+        .outer {
+          border-left: 2px solid #333;
+
+        }
+
+        /* Card container */
+        .card {
+          position: relative;
+          margin: 0 0 20px 20px;
+          padding: 10px;
+          background: white;
+          color: black;
+          border-radius: 8px;
+          border-style: solid;
+          max-width: 85%;
+          border-color: var(--color1);
+        }
+
+        .timeline-info-p {
+            font-family: monaco, Consolas, "Lucida Console", monospace; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; ;
+            margin:0;
+            margin-left : 1em;
+            display: list-item;
+        }
+
+        /* Information about the timeline */
+        .timeline-info {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          margin-top: 0;
+        }
+
+        /* Title of the card */
+        .timeline-title {
+          color: var(--color1);
+          position: relative;
+          margin-top:0;
+          margin-bottom: 5px;
+        }
+
+        /* Timeline dot  */
+        .timeline-title::before {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background: white;
+          border-radius: 999px;
+          left: -42px;
+          border: 3px solid var(--color1);
+        }
+
+        .display-mobile {
+            display:none;
+        }
+
+/* Responsive design  */
+@media only screen and (max-width: 767px) {
+
+body {
+    font-size: 22px;
+}
+
+div.cover {
+  height : 315px;
+}
+
+
+div.cover-contact a {
+    font-size: 11px;
+}
+
+img.cover-profile {
+            height : 90px;
+            position: relative;
+            left: 50%;
+            margin-left: 0px;
+            transform: translateX(-50%);
+            margin-top : 60px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+div.cover p {
+    color: lightgray;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+div.cover-contact p:last-child {
+    text-align:left;
+}
+.section {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.section p {
+    font-family: monaco, Consolas, "Lucida Console", monospace; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; ;
+}
+
+div.section-grise1 {
+    padding-bottom: 40px;
+}
+
+div.section-grise1 p {
+   margin-bottom: 20px;
+}
+
+div.texte-avec-ligne-verticale {
+    text-align: center;
+}
+
+div.texte-avec-ligne-verticale a {
+    position: relative;
+    margin-top: -10px;
+    display: inline-block;
+    left:0%;
+}
+
+h2 {
+    font-size:25px;
+}
+
+img.col-contenu {
+    width: 100%;
+}
+
+div.col-contenu {
+    width: 100%;
+    padding-left: 0px;
+    margin-top:20px;
+}
+
+div.frame {
+    margin:0px 0px;
+    padding: 0px 0px;
+    box-shadow: none;
+}
+
+div.section {
+    padding-top: 10px;
+}
+
+div.frame img {
+    width: 90px;
+}
+
+p.frame-title {
+    font-size : 30px;
+    text-align: center;
+    font-family: 'The Great Summer', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+div.frame img{
+    width: 90px;
+    }
+
+iframe {
+    height: 300px;
+}
+
+div.video-container-h2 h2 {
+    font-size:20px;
+}
+
+div.video-container-h2-ytp h2 {
+    font-size:20px;
+}
+
+div.section-grise1 p  {
+    padding-top: 0px;
+
+}
+
+.display-mobile {
+    display:block;
+}
+
+div.separateur {
+    margin-top:20px;
+}
+}
+>>>>>>> 2c49a575cab5dd0c3b7442be1ccc84b421b0cea2
