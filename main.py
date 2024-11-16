@@ -12,4 +12,8 @@
 
     git log = voir les derniers commit ( les ID)
     git checkout <id du commit> = permet de revenir à une ancienne version.
+
+    kcote84
+    Voiir google password pour mot de passe.
+
 '''
