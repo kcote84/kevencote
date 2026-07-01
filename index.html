@@ -2,79 +2,111 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="https://fonts.cdnfonts.com/css/the-great-summer" rel="stylesheet">
-     <title>Keven Côté</title>
-     <link rel="stylesheet" href="style_kev.css">
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keven Côté — Dactyl</title>
+    <link rel="stylesheet" href="style_kev.css">
 </head>
 <body>
-<!-- DIV pour contour _ -->
-  <div class="container">
-      <!-- COUVERTURE -->
-      <div class="cover">
-          <img class="cover-profile" src="PHOTOPRO_V2_CERCLE.png"/>
-          <h1>Keven Côté </h1>
-          <p>Développeur Python | Recrue motivée</p>
-          <a class="contact-button" href="mailto:cotek99@hotmail.com?subject=Contact%20depuis%20votre%20site%20web" >ME CONTACTER</a>
 
-          <div class="cover-contact">
-              <p><a href="mailto:cotek99@hotmail.com?subject=Contact%20depuis%20votre%20site%20web">cotek99@hotmail.com</a></p>
-              <p><a href="tel:14185080284">1-418-508-0284</a></p>
-          </div>
-      </div>
+    <header class="site-header">
+        <p class="site-title">Keven Côté · Dactyl</p>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#dactyl">Dactyl</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-      <!-- Section grise 1 -->
-        <div class="section section-grise1">
-            <div class="separateur"></div>
-            <p><b>Autodidacte et polyvalent</b>, je m'adapte à tout projet avec aisance.</p>
-
-        </div>
-
-      <!-- Section blanche -->
-        <div class="section">
-            <h2 align="center">En savoir plus</h2>
-            <img src="antichambre.jpg" class="col-contenu">
-                <div class="col-contenu float-right">
-                    <div  class="texte-avec-ligne-verticale">
-                        <p class="texte-avec-ligne-verticale">En plein apprentissage de Python, je m'engage à <b>élargir</b> mes compétences et à <b>explorer</b> de nouveaux horizons dans le domaine de la programmation.<br> <br> Je suis enthousiaste à l'idée de mettre ma débrouillardise en pratique et d'apporter une valeur ajoutée à tout projet auquel je participe.</p>
-                        <a href="https://www.linkedin.com/in/kevencote84/" target="_blank"><br><br>Voir mon linkedIn</a>
-                    </div>
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <img class="hero-photo" src="PHOTOPRO_V2_CERCLE.png" alt="Photo de Keven Côté">
+                <h1>Keven Côté</h1>
+                <p class="tagline">Créateur de Dactyl</p>
+                <p class="lede">Une plateforme québécoise de prise de rendez-vous conversationnelle, assistée par IA.</p>
+                <span class="status-badge">Projet en développement actif</span>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#dactyl">Découvrir Dactyl</a>
+                    <a class="btn btn-secondary" href="#contact">Me contacter</a>
                 </div>
+            </div>
+            <div class="hero-visual" aria-hidden="true">
+                <p class="hero-visual-placeholder">Aperçu de Dactyl — animation à venir</p>
+            </div>
         </div>
+    </section>
 
-      <!-- Section grise 2 -->
-        <div class="section section-grise2">
-            <h2 align="center">Portfolio</h2>
-            <table class="col-portfolio" ; style="display:inline-block;">
-                <tr>
-                    <td><div class="barre-verticale"></div> </td>
-                    <td style="width:100%;"><a href="portfolio-python.html" target="_blank"><img style="width:90%; max-width:400px;" src="python_icon.png"></a></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td style="padding-left:15%";><a href="portfolio-python.html" target="_blank">Mes projets Python</a> </td>
-                </tr>
-            </table>
-            <table class="col-portfolio float-right">
-                <tr>
-                    <td><div class="barre-verticale"></div> </td>
-                    <td style="width:100%;"><a href="portfolio-kotlin.html" target="_blank"><img style="width:90%; max-width:400px;" src="PROJET_FUTUR.png"></a></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td style="padding-left:20%;"><a href="portfolio-kotlin.html">Mes projets futurs</a> </td>
-                </tr>
-
-            </table>
+    <section class="section" id="apropos">
+        <div class="section-inner">
+            <h2>À propos</h2>
+            <div class="separator"></div>
+            <p class="about-text">Autodidacte et orienté produit, je construis des outils concrets où l'automatisation et l'intelligence artificielle résolvent un vrai problème du quotidien. Mon parcours est parti de la programmation en autodidacte; aujourd'hui, j'y consacre mon énergie pour développer Dactyl.</p>
         </div>
+    </section>
 
+    <section class="section section-surface" id="dactyl">
+        <div class="section-inner">
+            <h2>Dactyl</h2>
+            <div class="separator"></div>
+            <p class="section-lede">Beaucoup de travailleurs autonomes perdent du temps — et des clients — à gérer leurs rendez-vous par téléphone ou par texto. Dactyl propose une prise de rendez-vous conversationnelle, guidée par une IA, simple pour le client et sans friction pour l'entreprise.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Automatisation</h3>
+                    <p>La prise de rendez-vous se fait sans intervention manuelle, jour et nuit.</p>
+                </div>
+                <div class="card">
+                    <h3>IA appliquée</h3>
+                    <p>Une IA conversationnelle, incarnée par Yvette, guide le client jusqu'à la confirmation.</p>
+                </div>
+                <div class="card">
+                    <h3>Pensé pour les travailleurs autonomes</h3>
+                    <p>Simple à mettre en place, sans complexité technique pour l'entreprise.</p>
+                </div>
+                <div class="card">
+                    <h3>En développement actif</h3>
+                    <p>Dactyl est un projet en bêta, amélioré en continu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <!-- Section Bas de page -->
-        <iframe src="contact-frame.html" scrolling="no"></iframe>
+    <section class="section" id="comment-ca-marche">
+        <div class="section-inner">
+            <h2>Comment ça fonctionne</h2>
+            <div class="separator"></div>
+            <div class="steps">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <h3>Le client écrit à Yvette</h3>
+                    <p>Par texto ou par la web, sans application à installer.</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <h3>Yvette propose des disponibilités</h3>
+                    <p>La conversation reste simple et guidée du début à la fin.</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <h3>Le rendez-vous est confirmé</h3>
+                    <p>Automatiquement, sans aller-retour manuel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </div>
+    <footer class="site-footer" id="contact">
+        <div class="section-inner">
+            <h2>Contact</h2>
+            <div class="separator"></div>
+            <p class="section-lede">Une question, une idée, envie d'en jaser? Écrivez-moi.</p>
+            <div class="footer-links">
+                <a class="btn btn-primary" href="mailto:cotek99@hotmail.com?subject=Contact%20depuis%20votre%20site%20web">ME CONTACTER</a>
+                <a href="https://www.linkedin.com/in/kevencote84/" target="_blank" rel="noopener">Voir mon profil LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
-
 </html>

@@ -1,503 +1,408 @@
+/* ==========================================================================
+   Dactyl / Keven Côté — feuille de style
+   Palette : #4D2E1C (primaire) / #F1EBDF (fond) / #F7F5ED (surface) / #C97A40 (accent)
+   Polices locales : Inter (texte) + Special Elite (titres / identité Dactyl)
+   ========================================================================== */
 
-        @import url('https://fonts.cdnfonts.com/css/the-great-summer');
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('fonts/Inter-Variable.woff2') format('woff2');
+}
 
-        body {
-         margin: 0;
-         font-family: 'The Great Summer', sans-serif;
-         font-size: 24px;
-         font-style: normal;
-         font-variant: normal;
-         font-weight: 700;
-         line-height: 26.4px;
-        }
+@font-face {
+    font-family: 'Special Elite';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('fonts/SpecialElite-Regular.woff2') format('woff2');
+}
 
-        * {
-            box-sizing: border-box;
-        }
+:root {
+    --color-primary: #4D2E1C;
+    --color-bg: #F1EBDF;
+    --color-surface: #F7F5ED;
+    --color-accent: #C97A40;
+    --color-accent-hover: #B0632F;
 
+    --font-body: 'Inter', Arial, sans-serif;
+    --font-display: 'Special Elite', 'Courier New', monospace;
 
-        :root {
-            --color1: #483D8B;
-            --color2: #DCDCDC80;
-        }
+    --radius: 6px;
+    --max-width: 1100px;
+}
 
-        iframe {
-            width: 100%;
-            border: none;
-            height: 350px;
-        }
-
-        div.container {
-            justify-content: center;
-            align-items: flex-start;
-            height: 100%;
-            max-width: 1300px;
-            margin: 0 auto;
-        }
-
-
-        div.cover {
-          background:url(cover_v2.png) no-repeat center/cover;
-          height : 360px;
-          position: relative;
-        }
-
-        img.cover-profile {
-            height : 150px;
-            position: relative;
-            left: 50%;
-            margin-left: -65px;
-            margin-top : 30px;
-        }
-
-        h1 {
-            color: white;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        div.cover p {
-            color: lightgray;
-            text-align: center;
-            margin-top: -10px;
-        }
-
-        div.cover-contact {
-            font-family : arial;
-            font-size: 14px;
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            border-left: 4px solid var(--color1) ;
-            padding-left: 10px;
-        }
-
-        div.cover-contact p {
-            text-align : left;
-            margin-top: 0px;
-            margin-bottom: 0px;
-        }
-
-        div.cover-contact p:first-child {
-            margin-bottom: 10px;
-        }
-
-        div.cover-contact * {
-            color:white;
-        }
-
-        a.contact-button {
-            position: absolute;
-            text-decoration: none;
-            color: white;
-            padding: 8px 20px;
-            margin-top: -10px;
-            text-align:left;
-            left: 50%;
-            margin-left: -75px;
-            border: 4px solid var(--color1) ;
-            background-color: #483D8B50
-        }
-
-        a.contact-button:hover {
-            background-color: #F8F8FF;
-            border: 4px solid #F8F8FF ;
-            color: var(--color1);
-        }
-
-        .section {
-            padding-left: 40px;
-            padding-right: 40px;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            overflow: auto;
-        }
-
-        .section p {
-        font-family: monaco, Consolas, "Lucida Console", monospace; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; ;
-
-        }
-
-        div.section-grise1 {
-            background: url(triangle2white.svg) no-repeat center bottom/100%;
-            background-color: var(--color2);
-            padding-bottom: 80px;
-            /* -------FONT A REMPLACER PEUT_ÊTRE -------------- */
-            font-family: monaco, Consolas, "Lucida Console", monospace; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; ;
-        }
-
-        div.section-grise1 p {
-            font-size : 22px;
-            color: #656565;
-            text-align: center;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        div.section-grise2 {
-            background: url(triangle1white.svg) no-repeat center top/100%;
-            background-color: var(--color2);
-            padding-top: 80px;
-            /* -------FONT A REMPLACER PEUT_ÊTRE -------------- */
-            font-family: monaco, Consolas, "Lucida Console", monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; ;
-        }
-
-        h2 {
-            font-family: 'The Great Summer', sans-serif;
-            font-size: 30px;
-
-        }
-
-        div.separateur {
-            background: var(--color1);
-            height: 1px;
-            width: 200px;
-            position: relative;
-            left: 50%;
-            margin-left: -100px;
-        }
-
-        img.col-contenu {
-            width: 40%;
-        }
-
-        div.col-contenu {
-            width: 60%;
-            padding-left: 16px;
-        }
-
-        .float-right {
-            float:right;
-        }
-
-        div.texte-avec-ligne-verticale {
-            margin-top:0;
-        }
-
-        p.texte-avec-ligne-verticale {
-            margin-top:0;
-            border-left:4px solid var(--color1);
-            padding-left: 8px;
-            height: 70px;
-            display: inline-block;
-        }
-
-        div.texte-avec-ligne-verticale a {
-            position: relative;
-            margin-top: 30px;
-            left:33%
-        }
-
-        div.barre-verticale {
-            height: 50px;
-            width: 4px;
-            background-color: var(--color1);
-            margin-right: 8px;
-        }
-
-       .col-portfolio {
-            width: 46%;
-
-       }
-
-       div.frame {
-            margin:30px 50px;
-            padding: 20px 30px;
-            background-color: white;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-       }
-
-       p.frame-title {
-            font-size : 30px;
-            text-align: center;
-            font-family: 'The Great Summer', sans-serif;
-            margin-top: 5px;
-            margin-bottom: 15px;
-       }
-
-       div.frame img{
-            width: 100px;
-            }
-
-       div.portfolio-header {
-            height: 60px;
-            background: url(cover_v2.png) no-repeat center/cover;
-            position: relative;
-            overflow: auto;
-       }
-
-       h3 {
-            position: relative;
-            margin-left: 20px;
-            margin-top:-45px;
-            margin-bottom:0;
-            padding-bottom: 0;
-            color: white;
-            border-left: 4px solid var(--color1) ;
-            padding-left: 10px;
-       }
-
-       h3 a {
-            text-decoration:none;
-            color: white;
-       }
-
-       h3 a:hover {
-            color: var(--color1);
-        }
-
-       a.contact-button-portfolio {
-            position: absolute;
-            text-decoration: none;
-            color: white;
-            padding: 4px 10px;
-            text-align:left;
-            border: 4px solid var(--color1) ;
-            background-color: #483D8B50;
-            right:2%;
-            margin-top:12px;
-        }
-
-       a.contact-button-portfolio:hover {
-            background-color: #F8F8FF;
-            border: 4px solid #F8F8FF ;
-            color: var(--color1);
-        }
-
-       .video-container {
-            position: relative;
-            width: 90%;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-
-       .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .video-container-h2 * {
-            text-align: center;
-            margin-top: 10px;
-            margin-bottom:0px;
-            position: relative;
-            font-size:30px;
-        }
-
-        .video-container-h2-ytp * {
-            text-align: center;
-            margin-top: 10px;
-            margin-bottom:40px;
-            position: relative;
-            font-size:30px;
-        }
-
-        .ytp-title-text {
-            margin-top: 10px;
-
-        }
-
-            /* Timeline Container */
-        .timeline {
-          background: white;
-          margin: 20px auto;
-          padding: 20px 20px 20px 10%;
-        }
-
-        /* Outer Layer with the timeline border */
-        .outer {
-          border-left: 2px solid #333;
-
-        }
-
-        /* Card container */
-        .card {
-          position: relative;
-          margin: 0 0 20px 20px;
-          padding: 10px;
-          background: white;
-          color: black;
-          border-radius: 8px;
-          border-style: solid;
-          max-width: 85%;
-          border-color: var(--color1);
-        }
-
-        .timeline-info-p {
-            font-family: monaco, Consolas, "Lucida Console", monospace; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; ;
-            margin:0;
-            margin-left : 1em;
-            display: list-item;
-        }
-
-        /* Information about the timeline */
-        .timeline-info {
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-          margin-top: 0;
-        }
-
-        /* Title of the card */
-        .timeline-title {
-          color: var(--color1);
-          position: relative;
-          margin-top:0;
-          margin-bottom: 5px;
-        }
-
-        /* Timeline dot  */
-        .timeline-title::before {
-          content: "";
-          position: absolute;
-          width: 10px;
-          height: 10px;
-          background: white;
-          border-radius: 999px;
-          left: -42px;
-          border: 3px solid var(--color1);
-        }
-
-        .display-mobile {
-            display:none;
-        }
-
-/* Responsive design  */
-@media only screen and (max-width: 767px) {
+* {
+    box-sizing: border-box;
+}
 
 body {
-    font-size: 22px;
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    background: var(--color-bg);
+    color: var(--color-primary);
 }
 
-div.cover {
-  height : 315px;
+h1, h2, h3 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 1.3;
 }
 
-
-div.cover-contact a {
-    font-size: 11px;
+a {
+    color: var(--color-primary);
 }
 
-img.cover-profile {
-            height : 90px;
-            position: relative;
-            left: 50%;
-            margin-left: 0px;
-            transform: translateX(-50%);
-            margin-top : 60px;
+img {
+    max-width: 100%;
+    display: block;
 }
 
-h1 {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 40px;
+.separator {
+    height: 2px;
+    width: 80px;
+    background: var(--color-accent);
+    margin: 0 auto 28px;
+    border: none;
 }
 
-div.cover p {
-    color: lightgray;
-    text-align: center;
-    font-size: 20px;
-    margin-top: -10px;
-}
-
-div.cover-contact p:last-child {
-    text-align:left;
-}
-.section {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.section p {
-    font-family: monaco, Consolas, "Lucida Console", monospace; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; ;
-}
-
-div.section-grise1 {
-    padding-bottom: 40px;
-}
-
-div.section-grise1 p {
-   margin-bottom: 20px;
-}
-
-div.texte-avec-ligne-verticale {
-    text-align: center;
-}
-
-div.texte-avec-ligne-verticale a {
-    position: relative;
-    margin-top: -10px;
+.btn {
     display: inline-block;
-    left:0%;
+    padding: 12px 26px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: var(--font-body);
+    border: 2px solid transparent;
+    transition: background-color .15s ease, color .15s ease, border-color .15s ease;
 }
 
-h2 {
-    font-size:25px;
+.btn-primary {
+    background: var(--color-accent);
+    color: #fff;
 }
 
-img.col-contenu {
-    width: 100%;
+.btn-primary:hover {
+    background: var(--color-accent-hover);
 }
 
-div.col-contenu {
-    width: 100%;
-    padding-left: 0px;
-    margin-top:20px;
+.btn-secondary {
+    background: transparent;
+    border-color: currentColor;
+    color: inherit;
 }
 
-div.frame {
-    margin:0px 0px;
-    padding: 0px 0px;
-    box-shadow: none;
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.12);
 }
 
-div.section {
-    padding-top: 10px;
+/* -------------------------------------------------------------------- */
+/* En-tête                                                               */
+/* -------------------------------------------------------------------- */
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 20px 24px;
 }
 
-div.frame img {
-    width: 90px;
+.site-title {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    margin: 0;
 }
 
-p.frame-title {
-    font-size : 30px;
+.site-nav ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.site-nav a:hover {
+    color: var(--color-accent);
+}
+
+/* -------------------------------------------------------------------- */
+/* Hero                                                                  */
+/* -------------------------------------------------------------------- */
+
+.hero {
+    background: var(--color-primary);
+    color: var(--color-bg);
+}
+
+.hero-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 56px 24px 72px;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    flex: 1 1 380px;
+}
+
+.hero-photo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--color-accent);
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 2.1rem;
+    margin: 0 0 6px;
+}
+
+.hero .tagline {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    margin: 0 0 12px;
+}
+
+.hero .lede {
+    max-width: 460px;
+    margin: 0 0 20px;
+}
+
+.status-badge {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--color-bg);
+    margin-bottom: 24px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.hero-visual {
+    flex: 1 1 320px;
+    min-height: 220px;
+    background: var(--color-surface);
+    color: var(--color-primary);
+    border: 2px solid var(--color-accent);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
     text-align: center;
-    font-family: 'The Great Summer', sans-serif;
-    margin-top: 5px;
-    margin-bottom: 15px;
 }
 
-div.frame img{
-    width: 90px;
+.hero-visual-placeholder {
+    margin: 0;
+    font-style: italic;
+    opacity: .7;
+}
+
+/* -------------------------------------------------------------------- */
+/* Sections générales                                                    */
+/* -------------------------------------------------------------------- */
+
+.section {
+    padding: 64px 24px;
+}
+
+.section-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.section-surface {
+    background: var(--color-surface);
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0 0 16px;
+}
+
+.section-lede {
+    max-width: 640px;
+    margin: 0 auto 36px;
+    text-align: center;
+}
+
+.about-text {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Cartes Dactyl */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background: var(--color-surface);
+    border: 1px solid rgba(77, 46, 28, 0.18);
+    border-radius: var(--radius);
+    padding: 24px;
+}
+
+.section-surface .card {
+    background: var(--color-bg);
+}
+
+.card h3 {
+    font-size: 1.05rem;
+    margin: 0 0 10px;
+}
+
+.card p {
+    margin: 0;
+}
+
+/* Étapes (comment ça fonctionne) */
+
+.steps {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.step {
+    flex: 1 1 200px;
+    max-width: 260px;
+}
+
+.step-number {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    color: var(--color-accent);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.step h3 {
+    font-size: 1rem;
+    margin: 0 0 8px;
+}
+
+.step p {
+    margin: 0;
+    font-size: .95rem;
+}
+
+/* -------------------------------------------------------------------- */
+/* Pied de page / Contact                                                */
+/* -------------------------------------------------------------------- */
+
+.site-footer {
+    background: var(--color-primary);
+    color: var(--color-bg);
+    text-align: center;
+    padding: 56px 24px;
+}
+
+.site-footer h2 {
+    color: var(--color-bg);
+}
+
+.site-footer .section-lede {
+    color: var(--color-bg);
+}
+
+.footer-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-links a {
+    color: var(--color-bg);
+}
+
+/* -------------------------------------------------------------------- */
+/* Accessibilité — mouvement réduit                                      */
+/* -------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
+}
+
+/* -------------------------------------------------------------------- */
+/* Responsive                                                            */
+/* -------------------------------------------------------------------- */
+
+@media (max-width: 700px) {
+    .site-header {
+        flex-direction: column;
+        text-align: center;
     }
 
-iframe {
-    height: 300px;
-}
+    .hero-inner {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px 56px;
+    }
 
-div.video-container-h2 h2 {
-    font-size:20px;
-}
+    .hero-photo {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-div.video-container-h2-ytp h2 {
-    font-size:20px;
-}
+    .hero .lede {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-div.section-grise1 p  {
-    padding-top: 0px;
-}
+    .hero-actions {
+        justify-content: center;
+    }
 
-.display-mobile {
-    display:block;
-}
+    .section {
+        padding: 48px 20px;
+    }
 
-div.separateur {
-    margin-top:20px;
-}
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
 }
