@@ -225,21 +225,93 @@ img {
 .hero-visual {
     flex: 1 1 320px;
     min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Carte "machine à écrire" */
+
+.type-card {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
     background: var(--color-surface);
     color: var(--color-primary);
     border: 2px solid var(--color-accent);
     border-radius: var(--radius);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
-    text-align: center;
+    padding: 22px 24px 60px;
+    box-shadow: 5px 5px 0 rgba(77, 46, 28, 0.25);
+    transition: opacity .4s ease, transform .4s ease;
 }
 
-.hero-visual-placeholder {
-    margin: 0;
-    font-style: italic;
-    opacity: .7;
+.type-card.is-fading {
+    opacity: 0;
+    transform: translateY(8px);
+}
+
+.type-card-label {
+    font-family: var(--font-display);
+    font-size: .78rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: var(--color-accent);
+    margin: 0 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed rgba(77, 46, 28, 0.3);
+}
+
+.type-lines {
+    min-height: 96px;
+    font-family: var(--font-display);
+    font-size: .92rem;
+    line-height: 1.6;
+}
+
+.type-line {
+    margin: 0 0 6px;
+}
+
+.type-lines .type-line:last-child::after {
+    content: '\258C';
+    margin-left: 2px;
+    color: var(--color-accent);
+    animation: type-blink 1s steps(1) infinite;
+}
+
+.type-card.is-done .type-lines .type-line:last-child::after {
+    animation: none;
+    opacity: 0;
+}
+
+@keyframes type-blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.stamp {
+    position: absolute;
+    right: 20px;
+    bottom: 16px;
+    font-family: var(--font-display);
+    font-size: .82rem;
+    line-height: 1.25;
+    color: var(--color-accent);
+    border: 3px solid var(--color-accent);
+    padding: 6px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0;
+    transform: scale(1.4) rotate(-8deg);
+    transition: opacity .3s ease, transform .3s ease;
+    pointer-events: none;
+}
+
+.stamp.is-visible {
+    opacity: .85;
+    transform: scale(1) rotate(-8deg);
 }
 
 /* -------------------------------------------------------------------- */
@@ -419,5 +491,10 @@ img {
     .steps {
         flex-direction: column;
         align-items: center;
+    }
+
+    .type-card {
+        max-width: 300px;
+        padding: 18px 20px 54px;
     }
 }
